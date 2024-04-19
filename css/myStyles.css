@@ -1,0 +1,254 @@
+body {
+    font-family:sans-serif;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+}
+
+.left-section {
+    width: 25%;
+    padding: 20px;
+    background-color: #b36369; /* Color for the left box */
+    color: white;
+}
+
+.profile-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.contact-info,
+.education,
+.skills,
+.languages {
+    margin-bottom: 20px;
+}
+
+.right-section {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #FFF5EE
+}
+
+h1 {
+    font-size: 36px;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 24px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+}
+
+h3 {
+    margin-top: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.right-section h3 {
+    color: #b36369; /* Same color as the box on the left */
+    font-weight: bold;
+    font-size: 20px; /* Adjust size as needed */
+}
+
+.skills h2 {
+    color: white;
+    font-size: 24px;
+    border-bottom: 1px solid white; /* Add border to separate skills section from languages */
+    padding-bottom: 5px;
+}
+
+.skills .skill-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.skills .skill-list li {
+    margin-bottom: 10px; /* Increase margin for better spacing */
+    color: white; /* Make text white */
+    width: 50%; /* Set width to 50% for better spacing */
+    float: left; /* Align items to the left */
+}
+
+.skills .skill-list li:nth-child(n+7) {
+    float: right; /* Align the second half of skills to the right */
+}
+
+.contact-info h2,
+.education h2,
+.languages h2 {
+    border-bottom: 1px solid white; /* Set bottom border to solid white */
+    padding-bottom: 5px; /* Add padding for spacing */
+}
+
+
+/* Existing styles... */
+
+ul {
+    list-style-type: disc; /* Use disc style for bullet points */
+    margin-left: 20px; /* Add left margin for indentation */
+}
+ul li::before {
+    font-weight: bold; /* Make the bullet points bold */
+}
+
+ul li {
+    font-weight: normal; /* Make the text within lists normal */
+}
+
+/* Styling for the colored column */
+.left-section {
+    float: left;
+    width: 25%; /* Adjust the width of the left column as needed */
+    background-color: #b36369;
+    padding: 20px;
+    color: white;
+}
+
+/* Add styles to ensure the leadership and service section aligns with the bottom of the colored column */
+.leadership {
+    margin-top: 20px; /* Adjust as needed */
+}
+
+/* Ensure the leadership and service section ends at the last bullet point */
+.leadership > div:last-child {
+    margin-bottom: 0;
+}
+
+.home-link {
+    position: absolute;
+    top: 26px; /* Adjust this value to change the vertical position */
+    right: 5rem; /* Adjust this value to change the horizontal position */
+    padding: 8px 12px; /* Adjust padding as needed */
+    background-color: #b36369;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: sans-serif;
+}
+
+.about-me-section img {
+    max-width: 500px; /* Adjust the value as needed */
+    max-height: 500px; /* Adjust the value as needed */
+    margin-top: 20px;
+}
+.pink-box {
+    background-color:#b36369;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.region-header {
+    font-size: 24px; /* Increase header size */
+    margin-bottom: 20px; /* Add space below the header */
+    color: #FFF5EE;
+}
+
+.regions {
+    display: flex;
+}
+
+.region {
+    flex: 1;
+    padding-right: 20px;
+    margin-right: 110px; /* Adjust the margin to move the line to the left */
+    color: #FFF5EE;
+}
+
+.region:last-child {
+    padding-right: 0; /* Remove padding from the last region */
+}
+
+.region h3 {
+    font-size: 20px; /* Increase subheader size */
+    margin-bottom: 10px;
+    color: #FFF5EE
+}
+
+.region ul {
+    /* Remove 'list-style-type: none;' to bring back bullet points */
+    padding: 0;
+}
+
+.region ul li {
+    font-size: 17px;
+    margin-bottom: 5px; /* Add space between list items */
+    color: #FFF5EE;
+}
+
+.regions {
+    display: flex;
+}
+
+.region {
+    flex: 1;
+    padding: 0 10px; /* Add padding to create space for the lines */
+    position: relative; /* Add position relative */
+}
+
+.region:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #FFF5EE; /* Adjust line color as needed */
+}
+
+.region-header {
+    border-bottom: 4px solid #FFF5EE; /* Adjust the thickness and color as needed */
+    font-size: 24px; /* Adjust the font size as needed */
+    padding-bottom: 10px; /* Add some padding to separate the line from the content */
+}
+
+.region ol {
+    color: #FFF5EE; 
+}
+.top-anchor {
+    display: block; /* Make it a block element to apply padding */
+    padding: 8px 12px;
+    background-color:#FFF5EE; /* Set background color */
+    color:#b36369; /* Set text color */
+    text-decoration: none; /* Remove default underline */
+    font-family: serif;
+    font-size: 1.5rem;
+}
+
+.graph-header{
+    color: #FFF5EE;
+}
+.graph-header::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px; /* Match the thickness of the line */
+    background-color: #FFF5EE; /* Match the color with the header */
+    margin-bottom: 20px; /* Add spacing between the header and the line */
+}
+
+.graph-header {
+    border-bottom: none; /* Remove any border-bottom style */
+}
+
+.about-me-section iframe{
+    margin-left: 12rem;
+    height: 400px;
+    width: 700px;
+    margin-bottom: 50px;
+}

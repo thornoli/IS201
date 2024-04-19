@@ -1,0 +1,58 @@
+#projects{
+    background-color: #e8d2cd !important;
+}
+
+.masthead{
+    color: #B73f49 !important;
+}
+.nav-link{
+    color: white !important;
+    font-size: 1.5rem;
+}
+h1{
+    height: 20rem;
+    font-size:5rem !important;
+    font: bold;
+}
+#about{
+   font-size: larger;
+   padding: 14rem;
+}
+h2{
+    margin-bottom: -15rem;
+    font-size: 4rem;
+}
+
+#firstButton {
+    position: relative; /* or absolute or fixed depending on your layout */
+    top: -150px; /* Adjust the distance up the page */
+}
+
+h4{
+color: #B73f49 !important;
+font-weight: bolder;
+}
+
+.signup-section{
+    background: url("../assets/img/AdobeStock_100929006.jpeg") !important;
+}
+
+.contact-section{
+    background-color: #b36369 !important;
+}
+    
+.project-text{
+    background-color: #b36369;
+    height: 505px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.text-white{
+     margin-bottom: 20px; /* Add space between header and paragraph */
+      }
+
+.text-black-50{
+    font-size: larger;
+}
